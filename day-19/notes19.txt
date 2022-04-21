@@ -43,9 +43,9 @@ Ex:
 
 (LIFO - Last in first out) 
 
-Ex:					Stack:
+Ex:						Call Stack:
  	var newNumber = Ex(5); //op-1 		op-3
-					op-2
+						op-2
 	let a = 10;				op-1
 	let b = 20;
 	let add = a+b;          //op-2
