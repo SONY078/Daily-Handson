@@ -1,0 +1,54 @@
+Global Execution Context 
+
+Global Execution Context:
+
+Creation Phase : is used to allocate memory to the variables and function definitions are allocated to the name of the functions.
+The  exact values are not ssigned to the variables,instead of the default value undefined is assigned to it.
+
+ Ex:   	var number ;
+       	function Ex(n)
+	{
+    		console.log(n);
+    		var a = n * n;
+    		// console.log(a);
+    		return a;
+    		// console.log(a);
+
+	}
+	var newNumber ;  
+
+where number = undefined, Ex() function Ex(n) { undefined = n*n ; ret; } newNumber = undefined.
+
+	var number = 10;
+       	function Ex(n)
+	{
+    		console.log(n);
+    		var a = n * n;
+    		// console.log(a);
+    		return a;
+    		// console.log(a);
+
+	}
+	var newNumber = Ex(5);  
+
+Execution Phase : This is the phase where the exact values will be allocated to the variables. Undefined will be removed now.
+
+Ex: 
+	function Ex(n)
+	{
+		var a = n*n;
+		return a;
+	}
+
+
+(LIFO - Last in first out) 
+
+Ex:					Stack:
+ 	var newNumber = Ex(5); //op-1 		op-3
+					op-2
+	let a = 10;				op-1
+	let b = 20;
+	let add = a+b;          //op-2
+	let subtract = a-b;     //op-3
+
+
