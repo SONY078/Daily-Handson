@@ -1,0 +1,90 @@
+
+functional execution context
+
+global execution context 
+
+--------------------------------
+
+call stack
+
+ex:
+var a=20;
+function a()
+{---}
+function b() {--}
+var d=b();
+GEC created.in GEC , var undefined,memory allocated
+FEC created.in GEC, the values will be assigned.
+
+---------------------------------------------------------------------------------------------
+datatypes
+------------
+1. Boolean : true and false
+ 
+ex: boolean a = true;
+
+2. Strings : combination of letters and words 
+
+ex: " a cat is sitting on the table"
+      ' that flower is rose'
+
+3. Number : includes integer and decimal values.
+
+ex: 2548754
+      78.4875
+
+4. Variables : used to store values of any type i.e number / string / boolean .
+
+RULES for assigning names to variables:
+.................................................................
+
+* try to make the variable name declarative.
+* it uses Camel Case (first letter is capital)
+* variable names are case sensitive.
+    ex: fName / Fname / FName 
+
+( keyword variablename = value;  // values are boolean / string / number .
+  ex: keyword firstname = " radha"; )
+
+KEYWORDS
+.......................
+keywords are three types :
+
+	 let var const
+
+declaring / initialising / redeclaring 
+..............................................................
+
+* let : used to assign variables with values
+	- they can be declared in a line and initialized with a value in another lines.
+	- they can also declared and initialized in same line.
+	- they can't be redeclared , but can be reinitialized.
+	-we can't use the same variable name 
+     ex: let fName = " sony ";
+           let fname ;
+           fname = "hiyyi";   
+
+* const : used to assign variables with values.
+	-they can be and initialized in the same line only.
+	-can't be redeclared and reinitialized.
+	-we can't use same name with two variable names.
+     ex: const lname = "V";
+
+* var : used to assign variables with values
+	- they can be declared in a line and initialized with a value in another lines.
+	- they can also declared and initialized in same line.
+	- they can't be redeclared and reinitialized.
+	-we can use the same name with two or more variable names.
+     ex: var name = " K ";
+            var name = " J ";
+
+           
+
+
+
+
+
+
+
+
+
