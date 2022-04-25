@@ -1,0 +1,110 @@
+Not defined:
+.................. 
+    Any variable which we try to access ,but not declared will throw a reference error:variable not defined.
+	console.log(a); // var a is not declared/defined 
+
+undefined:
+..................
+if a variable is declared but not assigned any value yet, but if we try to access that variable then we will get the error as undefined.
+	let a;
+	console.log(a); //var a is not assigned
+
+	let a=10;
+	console.log(a); 
+NULL:
+...........
+    It is a default value assigned by a user to the variable as long as the variable has not been assigned its original/updated value.
+
+	let b=null;
+	b=true;
+
+Global Scope and Local/block Scope
+............................................................
+
+Ex:
+	let f="sahi";	global scope variables f, l and age .
+	const l="hari";
+	var age=12;
+
+	console.log(f,l,age);
+	{
+	    console.log(f,l,age);
+	}
+	console.log(f,l,age);
+
+op: sahi hari 12
+       sahi hari 12
+       sahi hari 12
+
+Ex:
+	{
+		let f="sahi";	local sccope variables f, l and age.
+		const l="hari";
+		var age=12;
+	    	console.log(f,l,age);
+	}
+	console.log(f,l,age); // f is not defined
+
+In Global Scope, we are not able to access block scope variables, so it will give us a ReferenceError: variable not definedd.
+
+Ex:
+	{
+		let f="sahi";	local sccope variables f, l and age.
+		const l="hari";
+		var age=12;
+	    	console.log(f,l,age);
+	}
+	console.log(age);      		var can retrieve value in global scope even it is not 					defined in global scope.
+
+op:
+	 sahi hari 12
+	12
+
+Hoisting :
+------------
+ 	It only supported with that of var keywords and with the functions. Let and const keywords don;t support hoisting.
+- Let keyword variables can't be accessed before declaration/ initialization.
+     ex:	Console.log(game); ReferenceError: can't access 'game' before initialization
+
+const game = "cricket";
+ReferenceError: can't access 'game' before initialization
+
+let game1 ="cricket";
+ReferenceError: can't access 'game' before initialization
+
+//var keyword variables are hoisted.
+console.log(game2); //undefined
+var game2;
+game2 = "football";
+console.log(game2);
+
+*note: for var keyword variables, if we try to access them before assigning values to will give us undefined but the moment we declare a value to it , it will give us the assigned value.
+
+Hoisting to functions:
+---------------------------
+
+add();
+function add()
+{
+	console.log("hello");
+}
+
+functions are hoisted because of which we can call the function before declaring the function.
+
+add1(3,4);
+function add1(b,a)
+{
+    	let c=5;
+    	let res=a+b+c;
+    	console.log(res);
+}
+
+
+
+
+
+
+
+
+
+ 
