@@ -1,0 +1,80 @@
+
+		LOOPS
+		-.-.-.-.-.-
+
+1 . FOR LOOP
+
+ex:	for(let i=0;i<5;i++)
+	{
+	    console.log(i);
+	}
+
+
+2 . WHILE LOOP
+
+ex:
+	console.log("2 multiples");
+	j=1;
+	while(j<11)
+	{
+	    k=j*2;
+	    console.log(k);
+	    j++;
+	}
+
+3. DO WHILE LOOP
+
+ex:
+	let b=1;
+	do
+	{
+	    console.log(b);
+	    b = b + 2;
+	}
+	while(b<=10);
+
+4 . 
+	I) FOR IN : if value is n , then index is n-1.
+
+ex:
+    to retrieve the indexes:
+
+	let t = ["k" , " v" , "j" , "RM"];
+
+	for(let k in t)
+	{
+	    console.log(k); 	
+	}
+	
+	II) FOR OF :
+
+  to retrieve the values:
+
+ex:
+	
+	for(let v of t)
+	{
+	    console.log(v);
+	}
+
+
+	III) FOR EACH:
+
+  to retrieve the index with the values:
+
+ex:
+	t.forEach((v,index)=>{
+	    console.log(index,v);
+	})
+
+note : it is default format that the index will be displayed first.
+	console.log(index,v);
+	console.log(v,index);   //the output is same 
+
+output:	0 'k'
+	1 ' v'
+	2  'j'
+	3 'RM'
+
+-- the first parameter accepts the values of the array and the second parameter accepts the indexes of the array. 
+	
