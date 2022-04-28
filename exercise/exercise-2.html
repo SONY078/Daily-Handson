@@ -89,30 +89,24 @@
       return "Data Structure";
     }
     
-    7. if(A!=B || A!=C)
+    7. 
+    if(A == B && B == C)
     {
-    if(A>B)
-    {
-      if(A>C)
-      {
-        return A;
-      }
-      else
-      {
-        return C;
-      }
+      return -1;
     }
-    else if(B>C)
+    else if(A>B)
+    {
+      return A;
+    }
+    else if(B>C) 
     {
       return B;
     }
-    else{
+    else
+    {
       return C;
     }
-    }
-    else{
-      return -1;
-    }
+
     
     8. if(x<y)
     {
