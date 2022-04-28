@@ -1,0 +1,47 @@
+
+
+	FUNCTIONS
+	----------------
+
+in order to execute a particular lines of code respectively, we can allocate them into a function , which can be called again and again as required. 
+
+function syntax:
+
+	function functionnanme()
+	{
+		------
+	}
+ex:
+	function mul()
+	{
+		console.log("multiplication");
+	}
+
+ARROW FUNCTION
+-------------------------
+ex:
+
+const add = () => {
+}
+
+LEXICAL ENVIRONMENT and SCOPE CHAIN
+----------------------------------------------------------
+
+let i=5;
+function one()
+{
+	console.log(i);
+	two();
+	function two()
+	{
+		console.log(i);
+	}
+}
+one();
+
+output:
+5
+5
+
+
+
