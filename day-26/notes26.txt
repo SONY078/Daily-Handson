@@ -1,0 +1,117 @@
+		ARRAYS
+		-----------
+
+Arrays:   array is collection of homogeneous data elements.
+
+index start from 0.
+values contains the same datatype.
+IndexRange is ( 0 - ( x - 1 ) ).
+
+ex:
+	3 4 5 3 5 8 8
+	0 1 2 3 4 5 6
+
+array syntax:
+arrayname = [array values];
+
+ex:
+let nam=["sathe","lucky","raj"];
+console.log(nam);
+
+
+//using constructor
+ex:
+let nam3 = new Array("lee","han","chan","min");
+console.log(nam3);
+	
+Push , Pop , Shift , Unshift , Length , IndexOf , LastIndexOf
+------------------------------------------------------------------------
+
+Push :
+
+adds value at the last position.
+
+ex:
+
+names.push("chan");
+names.push(3);
+console.log(names);
+
+Pop: pops the last position
+
+ex:
+nam3.pop();
+nam3.pop();
+console.log(nam3);
+
+Shift: removes the first position and unshift adds the first position
+ex:
+	nam3.shift();
+	console.log(nam3);
+ex:
+	nam3.unshift("lee know");
+	console.log(nam3);
+
+Length:
+
+ex:
+	console.log(nam3.length);
+
+IndexOf  & lastIndexOf
+-----------------------------	
+
+ex:
+	let n1 = [10,20,30,40,50,50,50];
+	let n2 = [1, 2, 3, 4, 5];
+
+	console.log(n1.indexOf(30));
+	console.log(n1.lastIndexOf(50));
+	console.log(n1.lastIndexOf(5)); // -1 , represents null value cuz 				there is no value 5.	
+
+
+Concat
+--------
+concat can't changes the original array.
+
+ex:
+	c = n1.concat(n2); 
+	console.log(c);
+
+	console.log(n1.concat(n2));
+	
+	output:
+	[10, 20, 30, 40, 50, 50, 50, 1, 2, 3, 4, 5]
+
+join:
+
+ex:
+	console.log(n1.join(" , "));
+
+	op:
+	10 , 20 , 30 , 40 , 50 , 50 , 50
+
+Sort & Reverse
+------------------
+ex:
+
+console.log(n1.reverse());
+
+let n3 = ["sonu", "donu", "dori"];
+console.log(n3.sort());
+
+console.log(nam3.sort().reverse());
+
+
+Splice and Slice
+-------------------
+
+first value gives the index and second value gives the no.of values to be removed.
+
+let n4 = [1,2,3,4,5,6,7,8,9,10];
+console.log(n4); //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+n4.splice(2,2,3,5,6,8);
+console.log(n4); // [1, 2, 3, 5, 6, 8, 5, 6, 7, 8, 9, 10]
+
+slice : starting index is inclusive and last index is exclusive.,not included.
+console.log(n4.slice(2,6)); //[3, 5, 6, 8]
+console.log(n4); //[1, 2, 3, 5, 6, 8, 5, 6, 7, 8, 9, 10]
