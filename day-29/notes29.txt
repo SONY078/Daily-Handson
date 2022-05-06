@@ -1,0 +1,48 @@
+	Problem Solving
+	--------------------
+
+Obect :
+	Object consists of properties and methods.
+
+Creation of an object:
+		
+	objname = keys : values
+
+objects have keys which are converted into a string type,the properties had methods , they don't follow the insertion order.
+
+create object
+....................
+	
+	let mobile = 
+	{
+	    brand : "samsung",
+	    weight : 189,
+	    isWorking : true,
+	    11 : "android version",
+	    displayInfo : function(){
+	        console.log(` the brand of any mobile is ${brand} and weight is ${weight} which is in workingcondition 	${isWorking} , also with an android  version of ${11} `)
+	     }
+	}
+
+add key and value to the object 
+
+	mobile.camera = "64px";
+
+
+this keyword
+....................
+
+in an object this referrs to the object.
+when we use "this" keyword alone ,then it points to global object,
+in a function "this" refers to a parent object.
+
+ex:
+value = 22;   //always give datatype otherwise it will become property. to the window object.
+
+console.log(value);
+console.log(this);         
+
+
+
+
+problem : create two students having properties as name,rollno,class, showDetails using object constructor.
