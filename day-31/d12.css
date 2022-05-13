@@ -1,0 +1,30 @@
+.cards
+{
+    
+    display: flex;
+    flex-flow: row;
+    gap: 10px; 
+    /* justify-content: space-between; */
+     
+}
+.card1
+{
+    width: 150px;
+    height: 250px;
+    background-color: rgb(126, 126, 210);
+    border-radius: 10px;
+}
+.card2
+{
+    width: 150px;
+    height: 250px;
+    background-color: rgb(126, 126, 210);
+    border-radius: 10px;
+}
+.card3
+{
+    width: 150px;
+    height: 250px;
+    background-color: rgb(126, 126, 210);
+    border-radius: 10px;
+}
