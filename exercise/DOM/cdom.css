@@ -1,0 +1,50 @@
+.i
+{
+
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.i1
+{
+    height: 200px;
+    width: 300px;
+    background-color: blueviolet;
+}
+.i2
+{
+    height: 200px;
+    width: 300px;
+    background-color: blueviolet;
+
+}
+.i3
+{
+    height: 200px;
+    width: 300px;
+    background-color: blueviolet;
+
+}
+#time
+{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+.form
+{
+    height: 200px;
+    line-height: 10px;
+    display: flex;
+    flex-flow: column wrap;
+}
+form
+{
+    height: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 170px;
+    gap: 15px;
+}
