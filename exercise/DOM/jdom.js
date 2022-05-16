@@ -17,7 +17,7 @@ function changeDirection()
 }
 
 
-// 7.
+
 function changeColor()
 {
     const changeColor = document.getElementsByClassName("heading");
@@ -64,7 +64,7 @@ function replaceText()
 
 
 
- //8. Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected
+
 
 function printValue()
 {
@@ -73,7 +73,7 @@ function printValue()
     document.querySelector("#printValue").append(element1);
 }
 
-//9 form
+
 document.write("<br>");
 document.write("<br>");
 document.write("\n");
@@ -109,7 +109,7 @@ function formDetails()
 
     var year = document.createElement("input");
     year.setAttribute("type","date");
-    year.setAttribute("name","DOB");
+    year.setAttribute("name","year");
     year.setAttribute("min","1995-01-01");
 
     var submit = document.createElement("input")
