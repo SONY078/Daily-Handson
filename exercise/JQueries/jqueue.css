@@ -1,0 +1,18 @@
+p
+{
+    height: 150px;
+    width: 190px;
+    background-color: aquamarine;
+    padding: 18px;
+    position: relative;
+    left: 60px;
+}
+button
+{
+    width: 120px;
+    height: 30px;
+    border-radius: 14px;
+    background-color: black;
+    color: aqua;
+    
+}
